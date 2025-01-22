@@ -1,0 +1,33 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-QuestionServicesApplication<question-services>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.antatrix.question_services.QuestionServicesApplication",
+      "projectName": "question-services",
+      "vmArgs": "-Dserver.port=8081",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "instance1"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-QuestionServicesApplication<question-services> Instance 2",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.antatrix.question_services.QuestionServicesApplication",
+      "projectName": "question-services",
+      "vmArgs": "-Dserver.port=8082",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "instance2"
+      }
+    }
+  ]
+}
