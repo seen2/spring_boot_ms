@@ -28,6 +28,16 @@
       "env": {
         "SPRING_PROFILES_ACTIVE": "instance2"
       }
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-ApiGatewayApplication<api-gateway>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.antatrix.api_gateway.ApiGatewayApplication",
+      "projectName": "api-gateway",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }

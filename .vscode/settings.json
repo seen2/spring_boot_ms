@@ -1,5 +1,6 @@
 {
   "maven.view": "flat",
   "java.configuration.updateBuildConfiguration": "interactive",
-  "jdk.runConfig.cwd": "/workspace/spring_boot_ms/question-services"
+  "jdk.runConfig.cwd": "/workspace/spring_boot_ms/question-services",
+  "java.compile.nullAnalysis.mode": "disabled"
 }

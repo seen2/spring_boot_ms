@@ -22,6 +22,7 @@ public class QuizService {
   @Autowired
   private QuizRepository quizRepository;
 
+  @SuppressWarnings({ "rawtypes", "unchecked" })
   public ResponseEntity<String> createQuiz(QuizDto quizDto) {
     String category = quizDto.getCategory();
     Integer noOfQuestions = quizDto.getNoOfQuestions();
@@ -37,13 +38,14 @@ public class QuizService {
   }
 
   public ResponseEntity<List<QuestionWrapper>> getQuestions(Integer id) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'getQuestions'");
+    List<Integer> questionIds = quizRepository.findById(id).get().getQuestionIds();
+    ResponseEntity<List<QuestionWrapper>> questions = quizInterface.getQuestions(questionIds);
+    return questions;
   }
 
   public ResponseEntity<Integer> submitQuiz(List<Response> responses, Integer id) {
-    // TODO Auto-generated method stub
-    throw new UnsupportedOperationException("Unimplemented method 'submitQuiz'");
+    ResponseEntity<Integer> score = quizInterface.getScore(responses);
+    return score;
   }
 
 }
