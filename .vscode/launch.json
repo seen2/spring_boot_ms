@@ -48,6 +48,26 @@
       "projectName": "quiz-services",
       "args": "",
       "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-OrderServicesApplication<order-services>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.antatrix.order_services.OrderServicesApplication",
+      "projectName": "order-services",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-PaymentServicesApplication<payment-services>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.antatrix.payment_services.PaymentServicesApplication",
+      "projectName": "payment-services",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env"
     }
   ]
 }
