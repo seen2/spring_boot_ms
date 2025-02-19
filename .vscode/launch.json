@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "ServiceRegisteryApplication",
+      "request": "launch",
+      "mainClass": "com.antatrix.service_registery.ServiceRegisteryApplication",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Spring Boot-QuestionServicesApplication<question-services>",
       "request": "launch",
       "cwd": "${workspaceFolder}",
